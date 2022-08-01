@@ -6,23 +6,22 @@ local classes = {}
 for i, v in pairs(API_DUMP.Classes) do
     local propts = {}
     if v.Name and v.Name ~= "DataStoreListingPages" and v.Name ~= "Studio" then
-        for ii, vv in pairs(v.Members) do
-            local isService,nc = false, false
-            if vv.Tags then
-                if table.find(vv,"Service") then
-                    isService = true
+        if v.Superclass == "GuiObject" or v.Name == "GuiObject" or v.Superclass == "GuiLabel" or v.Name == "GuiLabel" or v.Superclass == "GuiButton" or v.Name == "GuiButton" then
+            for ii, vv in pairs(v.Members) do
+                local isService,nc = false, false
+                if vv.Tags then
+                    if table.find(vv,"Service") then
+                        isService = true
+                    end
                 end
-                if table.find(vv,"NotCreatable") then
-                    nc = true
+                if isService or nc then break end
+                if vv.MemberType == "Property" then
+                    propts[vv.Name] = {vv.ValueType.Category,vv.ValueType.Name}
                 end
             end
-            if isService or nc then break end
-            if vv.MemberType == "Property" then
-                propts[vv.Name] = {vv.ValueType.Category,vv.ValueType.Name}
-            end
+            classes[v.Name] = propts
         end
-        classes[v.Name] = propts
-    end 
+    end
 end
 function PrintTable(tb, atIndent)
     if tb.Print then
