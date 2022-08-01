@@ -1,4 +1,4 @@
-return {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettings = {
+getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettings = {
     "Anchored",
     "ImportAsModelAsset",
     "InsertInWorkspace"
@@ -1710,11 +1710,11 @@ return {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettings = {
     "IgnoreGuiInset",
     "OnTopOfCoreBlur"
 },DataStoreListingPages = {},Studio = {
-    "TODO Color",
-    "function Color",
-    "local Color",
-    "nil Color",
-    "self Color",
+    ""TODO" Color",
+    ""function" Color",
+    ""local" Color",
+    ""nil" Color",
+    ""self" Color",
     "Active Color",
     "Active Hover Over Color",
     "Always Save Script Changes",

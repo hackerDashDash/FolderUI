@@ -63,4 +63,4 @@ function PrintTable(tb, atIndent)
     out = out..(useNewlines and string.rep('    ', atIndent) or '').."}"
     return out
   end
-Script.Source = PrintTable(classes)
+Script.Source = "getgenv().Classes = "..PrintTable(classes)
