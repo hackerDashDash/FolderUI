@@ -18,6 +18,7 @@ for i, v in pairs(API_DUMP.Classes) do
             end
             if isService or nc then break end
             if vv.MemberType == "Property" then
+                propts[vv.Name] = {vv.ValueType.Category,vv.ValueType.Name}
                 table.insert(propts, vv.Name)
             end
         end
