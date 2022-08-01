@@ -1,4 +1,4 @@
-getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettings = {
+return {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettings = {
     "Anchored",
     "ImportAsModelAsset",
     "InsertInWorkspace"
@@ -253,7 +253,7 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "ReferenceOrigin",
     "ReferenceOriginWorld",
     "ShrinkFactor"
-},Path = {"Status"},GuiLabel = {},SpecialMesh = {"MeshType"},WeldConstraint = {
+},Path = {"Status"},GuiLabel = {},ReflectionMetadataFunctions = {},WeldConstraint = {
     "Active",
     "Enabled",
     "Part0",
@@ -1077,7 +1077,7 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
 },FunctionalTest = {"Description"},DataModelPatchService = {},MouseService = {},LodDataEntity = {"EntityLodEnabled"},UITextSizeConstraint = {
     "MaxTextSize",
     "MinTextSize"
-},ReflectionMetadata = {},DataStoreKeyPages = {},NoCollisionConstraint = {
+},HttpRequest = {},DataStoreKeyPages = {},NoCollisionConstraint = {
     "Enabled",
     "Part0",
     "Part1"
@@ -1267,7 +1267,15 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
 },SunRaysEffect = {
     "Intensity",
     "Spread"
-},CorePackages = {},DraftsService = {},RunningAverageItemInt = {},PlayerMouse = {},AnalyticsService = {"ApiKey"},LogService = {},AlignPosition = {
+},CorePackages = {},DraftsService = {},RunningAverageItemInt = {},PlayerMouse = {},AnalyticsService = {"ApiKey"},PluginAction = {
+    "ActionId",
+    "AllowBinding",
+    "Checked",
+    "DefaultShortcut",
+    "Enabled",
+    "StatusTip",
+    "Text"
+},AlignPosition = {
     "ApplyAtCenterOfMass",
     "MaxForce",
     "MaxVelocity",
@@ -1367,14 +1375,7 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "UseSceneOriginAsPivot",
     "WorldForward",
     "WorldUp"
-},ScriptService = {},HapticService = {},DebuggerBreakpoint = {
-    "Condition",
-    "ContinueExecution",
-    "IsEnabled",
-    "Line",
-    "LogExpression",
-    "isContextDependentBreakpoint"
-},TeleportAsyncResult = {
+},ScriptService = {},HapticService = {},TeleportAsyncResult = {
     "PrivateServerId",
     "ReservedServerAccessCode"
 },DialogChoice = {
@@ -1382,30 +1383,24 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "GoodbyeDialog",
     "ResponseDialog",
     "UserDialog"
-},PackageService = {},VoiceChatService = {
-    "EnableDefaultVoice",
-    "VoiceChatEnabledForPlaceOnRcc",
-    "VoiceChatEnabledForUniverseOnRcc"
-},EmotesPages = {},AnimationController = {},Beam = {
-    "Attachment0",
-    "Attachment1",
-    "Brightness",
-    "Color",
-    "CurveSize0",
-    "CurveSize1",
+},PackageService = {},JointInstance = {
+    "Active",
+    "C0",
+    "C1",
     "Enabled",
-    "FaceCamera",
-    "LightEmission",
-    "LightInfluence",
-    "Segments",
-    "Texture",
-    "TextureLength",
-    "TextureMode",
-    "TextureSpeed",
-    "Transparency",
-    "Width0",
-    "Width1",
-    "ZOffset"
+    "Part0",
+    "Part1",
+    "part1"
+},AnimationController = {},AnimationTrack = {
+    "Animation",
+    "IsPlaying",
+    "Length",
+    "Looped",
+    "Priority",
+    "Speed",
+    "TimePosition",
+    "WeightCurrent",
+    "WeightTarget"
 },TerrainDetail = {
     "ColorMap",
     "Face",
@@ -1414,31 +1409,26 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "NormalMap",
     "RoughnessMap",
     "StudsPerTile"
-},VisibilityService = {},VirtualUser = {},VideoCaptureService = {
+},VoiceChatService = {
+    "EnableDefaultVoice",
+    "VoiceChatEnabledForPlaceOnRcc",
+    "VoiceChatEnabledForUniverseOnRcc"
+},NetworkClient = {},VisibilityService = {},VirtualUser = {},VideoCaptureService = {
     "Active",
     "CameraID"
-},VersionControlService = {"ScriptCollabEnabled"},StringValue = {"Value"},AvatarEditorService = {},JointInstance = {
-    "Active",
-    "C0",
-    "C1",
-    "Enabled",
-    "Part0",
-    "Part1",
-    "part1"
-},TextChatMessageProperties = {
+},AvatarEditorService = {},VersionControlService = {"ScriptCollabEnabled"},TextChatMessageProperties = {
     "PrefixText",
     "Text"
-},Skin = {"SkinColor"},Pants = {"PantsTemplate"},IntConstrainedValue = {
+},Skin = {"SkinColor"},Pants = {"PantsTemplate"},StringValue = {"Value"},TextChatService = {
+    "ChatVersion",
+    "CreateDefaultCommands",
+    "CreateDefaultTextChannels"
+},FacialAnimationStreamingService = {"Enabled"},IntConstrainedValue = {
     "ConstrainedValue",
     "MaxValue",
     "MinValue",
     "Value"
-},Sparkles = {
-    "Color",
-    "Enabled",
-    "SparkleColor",
-    "TimeScale"
-},FacialAnimationStreamingService = {"Enabled"},BinaryStringValue = {},UserService = {},UserInputService = {
+},ScriptChangeService = {},BinaryStringValue = {},Animation = {"AnimationId"},RuntimeScriptService = {},HttpService = {"HttpEnabled"},UserService = {},UserInputService = {
     "AccelerometerEnabled",
     "BottomBarSize",
     "GamepadEnabled",
@@ -1462,7 +1452,7 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "TouchEnabled",
     "UserHeadCFrame",
     "VREnabled"
-},Animation = {"AnimationId"},RuntimeScriptService = {},HttpService = {"HttpEnabled"},UserGameSettings = {
+},UserGameSettings = {
     "AllTutorialsDisabled",
     "CameraMode",
     "CameraYInverted",
@@ -1509,19 +1499,16 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "LineJoinMode",
     "Thickness",
     "Transparency"
-},WorldRoot = {},BreakpointManager = {},Model = {
+},Model = {
     "LevelOfDetail",
     "PrimaryPart",
     "World Pivot Orientation",
     "World Pivot Position",
     "WorldPivot"
-},TextChannel = {},UIGridStyleLayout = {
-    "AbsoluteContentSize",
-    "FillDirection",
-    "HorizontalAlignment",
-    "SortOrder",
-    "VerticalAlignment"
-},Snap = {},BodyAngularVelocity = {
+},TerrainRegion = {
+    "IsSmooth",
+    "SizeInCells"
+},BreakpointManager = {},Snap = {},BodyAngularVelocity = {
     "AngularVelocity",
     "MaxTorque",
     "P",
@@ -1532,39 +1519,34 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "DesiredAngle",
     "Hole",
     "MaxVelocity"
+},TextChatConfigurations = {},UIGridStyleLayout = {
+    "AbsoluteContentSize",
+    "FillDirection",
+    "HorizontalAlignment",
+    "SortOrder",
+    "VerticalAlignment"
 },GuiBase3d = {
     "Color",
     "Color3",
     "Transparency",
     "Visible"
-},BrowserService = {},UIConstraint = {},Part = {"Shape"},UIComponent = {},UIBase = {},StandardPages = {},TweenService = {},Plugin = {
-    "CollisionEnabled",
-    "GridSize",
-    "HostDataModelType",
-    "HostDataModelTypeIsCurrent",
-    "MMJhwmfTYJVFm9TiUdmYYyrf6Pzpzf3YN1",
-    "UsesAssetInsertionDrag"
-},ScriptCloneWatcherHelper = {},TracerService = {},TeamCreateService = {},TeleportOptions = {
+},Part = {"Shape"},BrowserService = {},UIConstraint = {},StandardPages = {},UIComponent = {},UIBase = {},TweenService = {},Accessory = {"AccessoryType"},PausedStateBreakpoint = {"Breakpoint"},TeleportOptions = {
     "ReservedServerAccessCode",
     "ServerInstanceId",
     "ShouldReserveServer"
-},TeleportService = {"CustomizedTeleportUI"},Hint = {},TimerService = {},TextSource = {
+},TeleportService = {"CustomizedTeleportUI"},Hint = {},TracerService = {},TemporaryScriptService = {},TimerService = {},TextSource = {
     "CanSend",
     "UserId"
-},WedgePart = {},TextFilterResult = {},TextChatService = {
-    "ChatVersion",
-    "CreateDefaultCommands",
-    "CreateDefaultTextChannels"
-},DataStoreObjectVersionInfo = {
+},WedgePart = {},DataStoreObjectVersionInfo = {
     "CreatedTime",
     "IsDeleted",
     "Version"
-},Clothing = {"Color3"},RayValue = {"Value"},RotateP = {},PartOperation = {
+},TextFilterResult = {},RayValue = {"Value"},RotateP = {},PartOperation = {
     "RenderFidelity",
     "SmoothingAngle",
     "TriangleCount",
     "UsePartColor"
-},TextChatConfigurations = {},RunService = {"ClientGitHash"},BodyForce = {
+},BindableFunction = {},SelectionPointLasso = {"Point"},BodyForce = {
     "Force",
     "force"
 },UIPageLayout = {
@@ -1578,23 +1560,31 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "ScrollWheelInputEnabled",
     "TouchInputEnabled",
     "TweenTime"
-},MarkerCurve = {"Length"},TerrainRegion = {
-    "IsSmooth",
-    "SizeInCells"
+},MarkerCurve = {"Length"},DebuggerConnection = {
+    "ErrorMessage",
+    "HasError",
+    "Id",
+    "IsPaused"
 },Motor6D = {
     "ChildName",
     "ParentName",
     "Transform"
-},TemporaryScriptService = {},UIPadding = {
+},TextChannel = {},UIPadding = {
     "PaddingBottom",
     "PaddingLeft",
     "PaddingRight",
     "PaddingTop"
-},ToolboxService = {},LSPFileSyncService = {},EchoSoundEffect = {
-    "Delay",
-    "DryLevel",
-    "Feedback",
-    "WetLevel"
+},ToolboxService = {},LSPFileSyncService = {},SoundService = {
+    "AmbientReverb",
+    "DistanceFactor",
+    "DopplerScale",
+    "RespectFilteringEnabled",
+    "RolloffScale",
+    "VolumetricAudio"
+},WorldRoot = {},FaceAnimatorService = {
+    "AudioAnimationEnabled",
+    "FlipHeadOrientation",
+    "VideoAnimationEnabled"
 },BallSocketConstraint = {
     "LimitsEnabled",
     "MaxFrictionTorque",
@@ -1604,15 +1594,6 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "TwistLowerAngle",
     "TwistUpperAngle",
     "UpperAngle"
-},FaceAnimatorService = {
-    "AudioAnimationEnabled",
-    "FlipHeadOrientation",
-    "VideoAnimationEnabled"
-},TaskScheduler = {
-    "SchedulerDutyCycle",
-    "SchedulerRate",
-    "ThreadPoolConfig",
-    "ThreadPoolSize"
 },DataStoreService = {
     "AutomaticRetry",
     "LegacyNamingScheme"
@@ -1650,7 +1631,16 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "UsageContextPermission",
     "Volume",
     "isPlaying"
-},DebuggerManager = {"DebuggingEnabled"},StudioTheme = {},StudioService = {
+},TeamCreateService = {},DebuggerManager = {"DebuggingEnabled"},EqualizerSoundEffect = {
+    "HighGain",
+    "LowGain",
+    "MidGain"
+},TaskScheduler = {
+    "SchedulerDutyCycle",
+    "SchedulerRate",
+    "ThreadPoolConfig",
+    "ThreadPoolSize"
+},StudioTheme = {},StudioService = {
     "ActiveScript",
     "AlignDraggedObjects",
     "DraggerSolveConstraints",
@@ -1664,34 +1654,17 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "ShowConstraintDetails",
     "StudioLocaleId",
     "UseLocalSpace"
-},ReflectionMetadataItem = {
-    "Browsable",
-    "ClassCategory",
-    "ClientOnly",
-    "Constraint",
-    "Deprecated",
-    "EditingDisabled",
-    "EditorType",
-    "FFlag",
-    "IsBackend",
-    "PropertyOrder",
-    "ScriptContext",
-    "ServerOnly",
-    "SliderScaling",
-    "UIMaximum",
-    "UIMinimum",
-    "UINumTicks"
-},RemoteEvent = {},StudioHighDpiService = {},StudioDeviceEmulatorService = {},DataStoreIncrementOptions = {},BodyPosition = {
+},RemoteEvent = {},DataStoreIncrementOptions = {},BodyPosition = {
     "D",
     "MaxForce",
     "P",
     "Position",
     "maxForce",
     "position"
-},StudioData = {
-    "EnableScriptCollabByDefaultOnLoad",
-    "SrcPlaceId",
-    "SrcUniverseId"
+},RbxAnalyticsService = {},StudioHighDpiService = {},ScreenGui = {
+    "DisplayOrder",
+    "IgnoreGuiInset",
+    "OnTopOfCoreBlur"
 },SurfaceGui = {
     "Active",
     "Adornee",
@@ -1705,196 +1678,54 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "SizingMode",
     "ToolPunchThroughDistance",
     "ZOffset"
-},ScreenGui = {
-    "DisplayOrder",
-    "IgnoreGuiInset",
-    "OnTopOfCoreBlur"
-},DataStoreListingPages = {},Studio = {
-    ""TODO" Color",
-    ""function" Color",
-    ""local" Color",
-    ""nil" Color",
-    ""self" Color",
-    "Active Color",
-    "Active Hover Over Color",
-    "Always Save Script Changes",
-    "Animate Hover Over",
-    "Auto Clean Empty Line",
-    "Auto Closing Brackets",
-    "Auto Closing Quotes",
-    "Auto Indent Rule",
-    "Auto-Recovery Enabled",
-    "Auto-Recovery Interval (Minutes)",
-    "Auto-Recovery Path",
-    "Background Color",
-    "Basic Objects Display Mode",
-    "Bool Color",
-    "Bracket Color",
-    "Built-in Function Color",
-    "Camera Mouse Wheel Speed",
-    "Camera Pan Speed",
-    "Camera Shift Speed",
-    "Camera Speed",
-    "Camera Zoom to Mouse Position",
-    "Clear Output On Start",
-    "CommandBarLocalState",
-    "Comment Color",
-    "Current Line Highlight Color",
-    "Debugger Current Line Color",
-    "Debugger Error Line Color",
-    "DefaultScriptFileDir",
-    "DeprecatedObjectsShown",
-    "DisplayLanguage",
-    "Doc View Code Background Color",
-    "Drag Multiple Parts As Single Part",
-    "Enable Autocomplete",
-    "Enable Autocomplete Doc View",
-    "Enable CoreScript Debugger",
-    "Enable Http Sandboxing",
-    "Enable Internal Beta Features",
-    "Enable Internal Features",
-    "Enable Script Analysis",
-    "Enable Scrollbar Markers",
-    "Enable Signature Help",
-    "Enable Signature Help Doc View",
-    "Enable Temporary Tabs",
-    "Enable Temporary Tabs In Explorer",
-    "Enable Type Hover",
-    "EnableOnTypeAutocomplete",
-    "Error Color",
-    "Find Selection Background Color",
-    "Font",
-    "Format On Paste",
-    "Format On Type",
-    "Function Name Color",
-    "Highlight Current Line",
-    "Highlight Occurances",
-    "Hover Animate Speed",
-    "Hover Box Thickness",
-    "Hover Over Color",
-    "IconOverrideDir",
-    "Indent Using Spaces",
-    "Keyword Color",
-    "Line Thickness",
-    "LocalAssetsFolder",
-    "LuaDebuggerEnabled",
-    "LfnVynuy4pSdM73hmhWVfXnU1Sb9rAMpPn",
-    "Luau Keyword Color",
-    "Main Volume",
-    "Matching Word Background Color",
-    "Maximum Output Lines",
-    "Menu Item Background Color",
-    "Method Color",
-    "Number Color",
-    "Only Play Audio from Window in Focus",
-    "Operator Color",
-    "Output Font",
-    "Output Layout Mode",
-    "PermissionLevelShown",
-    "Physical Draggers Select Scope By Default",
-    "Pivot Snap To Geometry Color",
-    "PluginDebuggingEnabled",
-    "PluginsDir",
-    "Primary Text Color",
-    "Property Color",
-    "Render Throttle Percentage",
-    "Respect Studio shortcuts when game has focus",
-    "Ruler Color",
-    "Rulers",
-    "RuntimeUndoBehavior",
-    "Script Editor Color Preset",
-    "Script Editor Scrollbar Background Color",
-    "Script Editor Scrollbar Handle Color",
-    "ScriptEditorMenuBorderColor",
-    "ScriptEditorShouldShowPluginMethods",
-    "ScriptTimeoutLength",
-    "Scroll Past Last Line",
-    "Search Content For Core Scripts",
-    "Secondary Text Color",
-    "Select Color",
-    "Select/Hover Color",
-    "Selected Menu Item Background Color",
-    "Selected Text Color",
-    "Selection Background Color",
-    "Selection Color",
-    "Selection Highlight Thickness",
-    "Server Audio Behavior",
-    "Set Pivot of Imported Parts",
-    "Show Core GUI in Explorer while Playing",
-    "Show Deployment Warnings",
-    "Show Diagnostics Bar",
-    "Show FileSyncService",
-    "Show Hidden Objects in Explorer",
-    "Show Hover Over",
-    "Show Light Guides",
-    "Show Navigation Labels",
-    "Show Navigation Mesh",
-    "Show Pathfinding Links",
-    "Show Plugin GUI Service in Explorer",
-    "Show QT warnings in output",
-    "Show Whitespace",
-    "Show plus button on hover in Explorer",
-    "ShowCorePackagesInExplorer",
-    "Skip Closing Brackets and Quotes",
-    "String Color",
-    "Tab Width",
-    "Text Color",
-    "Text Wrapping",
-    "Theme",
-    "UI Theme",
-    "Use Bounding Box Move Handles",
-    "Warning Color",
-    "Whitespace Color"
-},AppUpdateService = {},HandleAdornment = {
+},StudioDeviceEmulatorService = {},StudioData = {
+    "EnableScriptCollabByDefaultOnLoad",
+    "SrcPlaceId",
+    "SrcUniverseId"
+},ScriptDebugger = {
+    "CurrentLine",
+    "IsDebugging",
+    "IsPaused",
+    "Script"
+},HandleAdornment = {
     "AdornCullingMode",
     "AlwaysOnTop",
     "CFrame",
     "SizeRelativeOffset",
     "ZIndex"
-},StatsItem = {"DisplayName"},Visit = {},MemStorageConnection = {},ForceField = {"Visible"},StandalonePluginScripts = {},NumberPose = {"Value"},ControllerService = {},DebuggerVariable = {
+},Visit = {},StatsItem = {"DisplayName"},ForceField = {"Visible"},AssetImportSession = {},NumberPose = {"Value"},ControllerService = {},DebuggerVariable = {
     "Name",
     "Populated",
     "Type",
     "Value",
     "VariableId",
     "VariablesCount"
-},Bone = {
+},MemStorageConnection = {},Bone = {
     "IsCFrameDriven",
     "Transform",
     "TransformedCFrame",
     "TransformedWorldCFrame"
-},FlagStand = {"TeamColor"},BodyVelocity = {
+},BodyVelocity = {
     "MaxForce",
     "P",
     "Velocity",
     "maxForce",
     "velocity"
-},CurveAnimation = {},ScreenshotHud = {
-    "CameraButtonIcon",
-    "CameraButtonPosition",
-    "CloseButtonPosition",
-    "CloseWhenScreenshotTaken",
-    "ExperienceNameOverlayEnabled",
-    "OverlayFont",
-    "UsernameOverlayEnabled",
-    "Visible"
-},CatalogPages = {},SpawnerService = {},Color3Value = {"Value"},SoundService = {
-    "AmbientReverb",
-    "DistanceFactor",
-    "DopplerScale",
-    "RespectFilteringEnabled",
-    "RolloffScale",
-    "VolumetricAudio"
-},PausedStateException = {"ExceptionText"},Platform = {},LineHandleAdornment = {
+},CurveAnimation = {},StandalonePluginScripts = {},CatalogPages = {},FlagStand = {"TeamColor"},Color3Value = {"Value"},SpawnerService = {},PausedStateException = {"ExceptionText"},Platform = {},Sparkles = {
+    "Color",
+    "Enabled",
+    "SparkleColor",
+    "TimeScale"
+},ScriptRegistrationService = {},LineHandleAdornment = {
     "Length",
     "Thickness"
-},ScriptRegistrationService = {},PVAdornment = {"Adornee"},RbxAnalyticsService = {},ReverbSoundEffect = {
+},PVAdornment = {"Adornee"},ReflectionMetadata = {},ReverbSoundEffect = {
     "DecayTime",
     "Density",
     "Diffusion",
     "DryLevel",
     "WetLevel"
-},PitchShiftSoundEffect = {"Octave"},DistortionSoundEffect = {"Level"},PlayerGui = {
+},PitchShiftSoundEffect = {"Octave"},PlayerGui = {
     "CurrentScreenOrientation",
     "ScreenOrientation",
     "SelectionImageObject"
@@ -1914,14 +1745,12 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "NormalMap",
     "RoughnessMap",
     "StudsPerTile"
-},GoogleAnalyticsConfiguration = {},EqualizerSoundEffect = {
-    "HighGain",
-    "LowGain",
-    "MidGain"
-},ChannelSelectorSoundEffect = {"Channel"},CustomSoundEffect = {},CoreGui = {
-    "SelectionImageObject",
-    "Version"
-},AlignOrientation = {
+},GoogleAnalyticsConfiguration = {},EchoSoundEffect = {
+    "Delay",
+    "DryLevel",
+    "Feedback",
+    "WetLevel"
+},DistortionSoundEffect = {"Level"},ChannelSelectorSoundEffect = {"Channel"},CustomSoundEffect = {},AlignOrientation = {
     "AlignType",
     "CFrame",
     "MaxAngularVelocity",
@@ -1933,14 +1762,54 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "Responsiveness",
     "RigidityEnabled",
     "SecondaryAxis"
-},JointsService = {},SoundEffect = {
+},CoreGui = {
+    "SelectionImageObject",
+    "Version"
+},JointsService = {},HttpRbxApiService = {},SphereHandleAdornment = {"Radius"},SoundEffect = {
     "Enabled",
     "Priority"
-},HttpRbxApiService = {},SphereHandleAdornment = {"Radius"},HttpRequest = {},SpotLight = {
+},SpotLight = {
     "Angle",
     "Face",
     "Range"
-},ReflectionMetadataFunctions = {},AnalysticsSettings = {},NetworkServer = {},ServiceProvider = {},AssetImportSession = {},StarterPlayerScripts = {},BindableFunction = {},CustomEventReceiver = {"Source"},TextChatMessage = {
+},ReflectionMetadataItem = {
+    "Browsable",
+    "ClassCategory",
+    "ClientOnly",
+    "Constraint",
+    "Deprecated",
+    "EditingDisabled",
+    "EditorType",
+    "FFlag",
+    "IsBackend",
+    "PropertyOrder",
+    "ScriptContext",
+    "ServerOnly",
+    "SliderScaling",
+    "UIMaximum",
+    "UIMinimum",
+    "UINumTicks"
+},SpecialMesh = {"MeshType"},NetworkServer = {},AnalysticsSettings = {},ServiceProvider = {},StarterPlayerScripts = {},Beam = {
+    "Attachment0",
+    "Attachment1",
+    "Brightness",
+    "Color",
+    "CurveSize0",
+    "CurveSize1",
+    "Enabled",
+    "FaceCamera",
+    "LightEmission",
+    "LightInfluence",
+    "Segments",
+    "Texture",
+    "TextureLength",
+    "TextureMode",
+    "TextureSpeed",
+    "Transparency",
+    "Width0",
+    "Width1",
+    "ZOffset"
+},CustomEventReceiver = {"Source"},TextChatMessage = {
     "MessageId",
     "Metadata",
     "PrefixText",
@@ -1955,12 +1824,7 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "C",
     "Range",
     "Thickness"
-},ScriptDebugger = {
-    "CurrentLine",
-    "IsDebugging",
-    "IsPaused",
-    "Script"
-},PausedStateBreakpoint = {"Breakpoint"},Trail = {
+},Clothing = {"Color3"},EmotesPages = {},Trail = {
     "Attachment0",
     "Attachment1",
     "Brightness",
@@ -1977,7 +1841,7 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "TextureMode",
     "Transparency",
     "WidthScale"
-},ScriptChangeService = {},UnionOperation = {},DockWidgetPluginGui = {"HostWidgetWasRestored"},AnimationClip = {
+},ScriptCloneWatcherHelper = {},UnionOperation = {},DockWidgetPluginGui = {"HostWidgetWasRestored"},AnimationClip = {
     "Loop",
     "Priority"
 },BodyColors = {
@@ -1993,16 +1857,20 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "RightLegColor3",
     "TorsoColor",
     "TorsoColor3"
-},RigidConstraint = {},TextChatCommand = {
+},ScreenshotHud = {
+    "CameraButtonIcon",
+    "CameraButtonPosition",
+    "CloseButtonPosition",
+    "CloseWhenScreenshotTaken",
+    "ExperienceNameOverlayEnabled",
+    "OverlayFont",
+    "UsernameOverlayEnabled",
+    "Visible"
+},TextChatCommand = {
     "Enabled",
     "PrimaryAlias",
     "SecondaryAlias"
-},DebuggerConnection = {
-    "ErrorMessage",
-    "HasError",
-    "Id",
-    "IsPaused"
-},AnimationClipProvider = {},FaceControls = {
+},RunService = {"ClientGitHash"},AnimationClipProvider = {},FaceControls = {
     "ChinRaiser",
     "ChinRaiserUpperLip",
     "Corrugator",
@@ -2053,14 +1921,11 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "TongueOut",
     "TongueUp",
     "UpperLipSuck"
-},MemoryStoreService = {},PluginAction = {
-    "ActionId",
-    "AllowBinding",
-    "Checked",
-    "DefaultShortcut",
-    "Enabled",
-    "StatusTip",
-    "Text"
+},MemoryStoreService = {},PluginDragEvent = {
+    "Data",
+    "MimeType",
+    "Position",
+    "Sender"
 },RemoteFunction = {},VideoFrame = {
     "IsLoaded",
     "Looped",
@@ -2070,43 +1935,36 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "TimePosition",
     "Video",
     "Volume"
-},UserStorageService = {},Selection = {
-    "ActiveInstance",
-    "SelectionThickness"
 },Motor = {
     "CurrentAngle",
     "DesiredAngle",
     "MaxVelocity"
+},Selection = {
+    "ActiveInstance",
+    "SelectionThickness"
 },Glue = {
     "F0",
     "F1",
     "F2",
     "F3"
-},FormFactorPart = {
+},ReflectionMetadataEnums = {},FormFactorPart = {
     "FormFactor",
     "formFactor"
-},GamepadService = {"GamepadCursorEnabled"},ReflectionMetadataEnums = {},PluginGui = {"Title"},CompressorSoundEffect = {
+},GamepadService = {"GamepadCursorEnabled"},PluginGui = {"Title"},DebuggerBreakpoint = {
+    "Condition",
+    "ContinueExecution",
+    "IsEnabled",
+    "Line",
+    "LogExpression",
+    "isContextDependentBreakpoint"
+},CompressorSoundEffect = {
     "Attack",
     "GainMakeup",
     "Ratio",
     "Release",
     "SideChain",
     "Threshold"
-},ProcessInstancePhysicsService = {},VoiceSource = {"UserId"},BlurEffect = {"Size"},AnimationTrack = {
-    "Animation",
-    "IsPlaying",
-    "Length",
-    "Looped",
-    "Priority",
-    "Speed",
-    "TimePosition",
-    "WeightCurrent",
-    "WeightTarget"
-},BloomEffect = {
-    "Intensity",
-    "Size",
-    "Threshold"
-},HingeConstraint = {
+},ProcessInstancePhysicsService = {},VoiceSource = {"UserId"},BlurEffect = {"Size"},LogService = {},HingeConstraint = {
     "ActuatorType",
     "AngularResponsiveness",
     "AngularSpeed",
@@ -2121,7 +1979,7 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "ServoMaxTorque",
     "TargetAngle",
     "UpperAngle"
-},PluginPolicyService = {},ScrollingFrame = {
+},AppUpdateService = {},PluginPolicyService = {},ScrollingFrame = {
     "AbsoluteCanvasSize",
     "AbsoluteWindowSize",
     "AutomaticCanvasSize",
@@ -2143,7 +2001,18 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "VerticalBarRect",
     "VerticalScrollBarInset",
     "VerticalScrollBarPosition"
-},PostEffect = {"Enabled"},NetworkClient = {},PhysicsService = {},SpringConstraint = {
+},BloomEffect = {
+    "Intensity",
+    "Size",
+    "Threshold"
+},PostEffect = {"Enabled"},Plugin = {
+    "CollisionEnabled",
+    "GridSize",
+    "HostDataModelType",
+    "HostDataModelTypeIsCurrent",
+    "MMJhwmfTYJVFm9TiUdmYYyrf6Pzpzf3YN1",
+    "UsesAssetInsertionDrag"
+},SpringConstraint = {
     "Coils",
     "CurrentLength",
     "Damping",
@@ -2155,21 +2024,16 @@ getgenv().Classes = {Vector3Value = {"Value"},BevelMesh = {},ImporterGroupSettin
     "Radius",
     "Stiffness",
     "Thickness"
-},PluginDragEvent = {
-    "Data",
-    "MimeType",
-    "Position",
-    "Sender"
-},MemStorageService = {},HiddenSurfaceRemovalAsset = {},Tween = {
+},PhysicsService = {},MemStorageService = {},HiddenSurfaceRemovalAsset = {},Tween = {
     "Instance",
     "TweenInfo"
 },ChatInputBarConfiguration = {
     "Enabled",
     "TargetTextChannel"
-},Accessory = {"AccessoryType"},StudioAssetService = {},SelectionPointLasso = {"Point"},GamePassService = {},ServerReplicator = {},ConeHandleAdornment = {
+},GamePassService = {},StudioAssetService = {},EventIngestService = {},UserStorageService = {},ServerReplicator = {},ConeHandleAdornment = {
     "Height",
     "Radius"
-},EventIngestService = {},DataStorePages = {},LocalDebuggerConnection = {},LoginService = {},Camera = {
+},RigidConstraint = {},DataStorePages = {},LocalDebuggerConnection = {},LoginService = {},Camera = {
     "CFrame",
     "CameraSubject",
     "CameraType",

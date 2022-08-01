@@ -5,7 +5,7 @@ local Script = game.ReplicatedStorage.ModuleScript
 local classes = {}
 for i, v in pairs(API_DUMP.Classes) do
     local propts = {}
-    if v.Name then
+    if v.Name and v.Name ~= "DataStoreListingPages" and v.Name ~= "Studio" then
         for ii, vv in pairs(v.Members) do
             local isService,nc = false, false
             if vv.Tags then
@@ -63,4 +63,4 @@ function PrintTable(tb, atIndent)
     out = out..(useNewlines and string.rep('    ', atIndent) or '').."}"
     return out
   end
-Script.Source = "getgenv().Classes = "..PrintTable(classes)
+Script.Source = "return "..PrintTable(classes)
